@@ -8,6 +8,6 @@ lftp ${INPUT_HOST} -u ${INPUT_USERNAME},${INPUT_PASSWORD} -e "
   set ftp:ssl-force $INPUT_FORCESSL; 
   set sftp:auto-confirm yes;
   set ssl:verify-certificate $INPUT_FORCESSL; 
-  mirror -v -P $INPUT_PCONN -R -n -L --delete -x ^\.git/$ $INPUT_LOCALDIR $INPUT_REMOTEDIR;
+  mirror -v -P $INPUT_PCONN -R -n -L $INPUT_OPTS -x ^\.git/$ $INPUT_LOCALDIR $INPUT_REMOTEDIR;
   quit
 "
