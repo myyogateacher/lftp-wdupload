@@ -1,4 +1,4 @@
-name: "lftp-upload"
+name: "lftp-wdupload"
 author: "Matteo De Filippis <hello@matteodefilippis.com>"
 description: "A GitHub Action for uploading files to a standard FTP server through Docker and lftp"
 inputs:
