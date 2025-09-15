@@ -15,6 +15,10 @@ inputs:
     description: "Force SSL encryption"
     required: false
     default: "false"
+  opts:
+    description: "Any opts"
+    required: false
+    default: ""
   localDir:
     description: "Local directory"
     required: false
