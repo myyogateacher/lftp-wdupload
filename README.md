@@ -1,8 +1,8 @@
-# lftp-upload
+# lftp-wdupload
 
 Doc refer https://github.com/marketplace/actions/lftp-upload
 
-Usage: same as above with --delete flag added.
+Usage: same as above with optional inline args
 
 ```yaml
 name: Deploy to FTP
@@ -26,5 +26,6 @@ jobs:
             multiplier: "2.0"
             baseInterval: "10"
             pConn: "10"
+            opts: "--delete ----ignore-time"
 ```
 
